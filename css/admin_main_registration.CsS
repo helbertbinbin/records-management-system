@@ -1,0 +1,286 @@
+main {
+    margin-left: 200px;
+    padding: 20px;
+    height: 800px;
+}
+
+main .container {
+    background-color: #0037af90;
+    height: 800px
+}
+
+main .container h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px 15px 5px 15px;
+    font-size: 20px;
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+main .container .box {
+    margin: 10px 20px 20px 20px;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 720px
+}
+
+main .container .box .form {
+    width: 100%;
+    padding: 20px;
+}
+
+main .container .box .form h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #0037af;
+    filter: drop-shadow(0 0 1px #808080);
+    margin: 20px 50px 50px 50px;
+}
+
+main .container .box .form .progressbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    margin: 0 70px 80px 70px;
+}
+
+main .container .box .form .progressbar::before,
+.progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: #f1f1f1;
+    z-index: 1;
+}
+
+main .container .box .form .progress {
+    background-color: #0037af;
+    width: 0%;
+}
+
+.progress-step {
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+}
+
+.progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 10px);
+    width: 150px;
+    text-align: center;
+    font-size: 13px;
+    color: #808080;
+}
+
+.progress-step-active {
+    background-color: #0037af;
+    color: #f3f3f3;
+}
+
+.form-step {
+    display: none;
+    transform-origin: right;
+    animation: animate 0.5s;
+    margin: 20px 30px;
+    height: 390px;
+}
+
+main .container .box .form .form-step h4 {
+    color: #0037af;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.form-step-active {
+    display: block;
+}
+
+main .container .box .form .form-step .input-group {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+main .container .box .form .form-step .input-group .group {
+    width: 100%;
+}
+
+main .container .box .form .form-step .input-group .group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+main .container .box .form .form-step .input-group .group label span {
+    color: #f10000;
+}
+
+main .container .box .form .form-step .input-group .group input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+main .container .box .form .form-step .input-group .group .date {
+    padding: 11px;
+}
+
+main .container .box .form .form-step .input-group .group select {
+    width: 100%;
+    padding: 10px 10px 13px 10px;
+    border-radius: 5px;
+}
+
+main .container .box .form .form-step .input-group .group button {
+    background-color: #0b4eb3;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    border: 1px solid #0037af;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+main .container .box .form .form-step .input-group .group button:hover {
+    background-color: #002470;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #002470;
+}
+
+@keyframes animate {
+    from {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+main .container .box .form .btns-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+main .container .box .form .btns-group .btn-cancel {
+    width: 150px;
+    padding: 15px;
+    display: block;
+    background-color: #f10000;
+    border: 1px solid #f10000;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+main .container .box .form .btns-group .btn-cancel:hover {
+    background-color: #c10000;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #c10000;
+}
+
+main .container .box .form .btns-group .btn-submit {
+    width: 150px;
+    padding: 15px;
+    display: block;
+    background-color: #00a000;
+    border: 1px solid #00a000;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+main .container .box .form .btns-group .btn-submit:hover {
+    background-color: #008000;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #008000;
+}
+
+main .container .box .form .btns-group .btns .btn {
+    width: 150px;
+    padding: 15px;
+    display: block;
+    background-color: #0037af;
+    border: 1px solid #0037af;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+main .container .box .form .btns-group .btns .btn:hover {
+    background-color: #002470;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #002470;
+}
+
+
+@media screen and (max-width: 1000px) {
+    main {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        height: 1050px;
+    }
+    
+    main .container {
+        height: 1050px
+    }
+    
+    main .container h2 {
+        text-align: center;
+    }
+    
+    main .container .box {
+        height: 970px;
+    }
+
+    .form-step {
+        height: 640px;
+    }
+
+    main .container .box .form .form-step .input-group {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0px;
+    }
+    
+    main .container .box .form .form-step .input-group .group input {
+        margin-bottom: 10px;
+    }
+
+}

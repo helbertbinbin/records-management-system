@@ -1,0 +1,110 @@
+nav {
+    background-color: #0037af;
+    position: absolute;
+    width: 200px;
+    height: 900px;
+}
+
+nav .sidebar .menu-btn {
+    text-align: right;
+    margin: 10px 15px;
+}
+
+nav .sidebar .menu-btn .menu-x {
+    color: #ffffff;
+    display: none;
+}
+
+nav .sidebar ul {
+    margin: 20px 10px 0 10px;
+}
+
+nav .sidebar ul li {
+    display: block;
+    line-height: 40px;
+}
+
+nav .sidebar ul li a {
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 14px;
+    padding: 10px;
+}
+
+nav .sidebar ul li a.active {
+    background-color: #002470;
+    border-bottom: 1px solid #f10000;
+}
+
+nav .sidebar ul li a:hover {
+    background-color: #002470;
+    border-bottom: 1px solid #f10000;
+}
+
+nav .sidebar ul li a i {
+    margin-right: 10px;
+}
+
+nav .sidebar ul li .dropdown-btn {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #ffffff;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    margin: 2px 0 4px 0;
+}
+
+nav .sidebar ul li .dropdown-btn#active {
+    background-color: #002470;
+    border-bottom: 1px solid #f10000;
+}
+
+nav .sidebar ul li .dropdown-btn .fa-folder {
+    margin-right: 10px;
+}
+
+nav .sidebar ul li .dropdown-btn .fa-caret-down {
+    float: right;
+}
+
+nav .sidebar ul li .dropdown-btn:hover {
+    background-color: #002470;
+    border-bottom: 1px solid #f10000;
+}
+
+nav .sidebar ul li .dropdown-container {
+    display: none;
+    padding-left: 10px;
+}
+
+nav .sidebar ul li .dropdown-container a {
+    display: block;
+    padding: 0 10px;
+    font-size: 13px;
+    margin: 0 0 4px 0;
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        position: fixed;
+        left: -300px;
+        transition: .5s;
+        top: 0px;
+        z-index: 1;
+    }
+
+    .navbar.responsive{
+        left: 0;
+        transition: .5s;
+    }
+
+    nav .sidebar .menu-btn .menu-x {
+        display: block;
+    }
+}

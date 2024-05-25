@@ -1,0 +1,196 @@
+main {
+    margin-left: 200px;
+    padding: 20px;
+    height: 800px;
+}
+
+main .container {
+    background-color: #0037af90;
+    height: 800px
+}
+
+main .container h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px 15px 5px 15px;
+    font-size: 20px;
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+main .container .box {
+    background-color: #ffffff;
+    margin: 10px 20px 20px 20px;
+    height: 720px
+}
+
+main .container .box h3 {
+    color: #0037af;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+main .container .box .contents {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+main .container .box .contents .wrapper-1 {
+    border-radius: 5px;
+    box-shadow: 0 0 5px #808080;
+    padding: 20px;
+    margin: 0 10px 0 0;
+    width: 50%;
+    height: 640px;
+}
+
+main .container .box .contents .wrapper-1 .qr-code {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+main .container .box .contents .wrapper-1 .qr-code h4 {
+    margin-bottom: 10px;
+}
+
+main .container .box .contents .wrapper-1 .qr-code img {
+    width: 300px;
+    box-shadow: 0 0 5px #808080;
+    border-radius: 10px;
+}
+
+main .container .box .contents .wrapper-1 .table {
+    margin-top: 30px;
+}
+
+main .container .box .contents .wrapper-1 table th {
+    width: 35%;
+    text-align: start;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+main .container .box .contents .wrapper-1 table td {
+    width: 65%;
+    font-size: 14px;
+}
+
+main .container .box .contents .wrapper-2 {
+    border-radius: 5px;
+    margin: 0 0 0 10px;
+    width: 50%;
+}
+
+main .container .box .contents .wrapper-2 .edit-profile {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #808080;
+    padding: 20px;
+    height: 260px;
+    margin-bottom: 20px;
+}
+
+main .container .box .contents .wrapper-2 .edit-profile h4 {
+    font-size: 14px;
+    text-align: center;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+}
+
+main .container .box .contents .wrapper-2 .edit-profile label {
+    margin-left: 5px;
+}
+
+main .container .box .contents .wrapper-2 .edit-profile input {
+    margin: 5px;
+    padding: 7px 10px;
+}
+
+main .container .box .contents .wrapper-2 .edit-profile .otp {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+main .container .box .contents .wrapper-2 .edit-profile .otp input {
+    width: 70%;
+}
+
+main .container .box .contents .wrapper-2 .edit-profile .otp .otp-btn {
+    width: 30%;
+    margin-right: 5px;
+    padding: 8px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: #00a000;
+    border: 1px solid #00a000;
+    border-radius: 5px;
+    color: white;
+}
+
+main .container .box .contents .wrapper-2 .edit-profile .otp .otp-btn:hover {
+    background-color: #008000;
+    border: 1px solid #008000;
+}
+
+main .container .box .contents .wrapper-2 .edit-profile button {
+    padding: 10px;
+    margin: 10px 5px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: #0037af;
+    border: 1px solid #0037af;
+    border-radius: 5px;
+    color: white;
+}
+
+main .container .box .contents .wrapper-2 .edit-profile button:hover {
+    background-color: #002470;
+    border: 1px solid #002470;
+}
+
+main .container .box .contents .wrapper-2 .change-pass {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #808080;
+    padding: 20px;
+    height: 320px;
+}
+
+main .container .box .contents .wrapper-2 .change-pass h4 {
+    font-size: 14px;
+    text-align: center;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+}
+
+main .container .box .contents .wrapper-2 .change-pass label {
+    margin-left: 5px;
+}
+
+main .container .box .contents .wrapper-2 .change-pass input {
+    margin: 5px 5px 15px 5px;
+    padding: 7px 10px;
+}
+
+main .container .box .contents .wrapper-2 .change-pass button {
+    padding: 10px;
+    margin: 20px 5px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: #0037af;
+    border: 1px solid #0037af;
+    border-radius: 5px;
+    color: white;
+}
+
+main .container .box .contents .wrapper-2 .change-pass button:hover {
+    background-color: #002470;
+    border: 1px solid #002470;
+}

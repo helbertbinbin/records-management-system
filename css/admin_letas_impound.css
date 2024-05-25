@@ -1,0 +1,401 @@
+main {
+    margin-left: 200px;
+    padding: 20px;
+    height: 800px;
+}
+
+main .container {
+    background-color: #0037af90;
+    height: 800px
+}
+
+main .container h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px 15px 5px 15px;
+    font-size: 20px;
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+main .container .box {
+    background-color: #ffffff;
+    margin: 10px 20px 20px 20px;
+    height: 720px
+}
+
+main .container .box h3 {
+    color: #0037af;
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+main .container .box .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+main .container .box .wrapper .content-1 {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .container .box .wrapper .content-1 .filter form .filt {
+    display: flex;
+    align-items: end;
+}
+
+main .container .box .wrapper .content-1 .filter form .filt .cont-1 {
+    display: flex;
+    align-items: end;
+}
+
+main .container .box .wrapper .content-1 .filter form .filt .all {
+    margin: 0 3px 0 0;
+}
+
+main .container .box .wrapper .content-1 .filter form .filt .all button {
+    padding: 6px 10px;
+    border: 1px solid #808080;
+    background: none;
+}
+
+main .container .box .wrapper .content-1 .filter form .filt .drawer {
+    margin: 0 3px;
+}
+
+main .container .box .wrapper .content-1 .filter form .filt .drawer select {
+    padding: 5px 10px;
+    border: 1px solid #808080;
+    background: none;
+}
+
+main .container .box .wrapper .content-1 .filter form .filt .apprehension-date {
+    text-align: center;
+    margin: 0 3px;
+}
+
+main .container .box .wrapper .content-1 .filter form .filt .apprehension-date label {
+    font-size: 12px;
+}
+
+main .container .box .wrapper .content-1 .filter form .filt .apprehension-date input {
+    padding: 5px 10px;
+    border: 1px solid #808080;
+    background: none;
+}
+
+main .container .box .wrapper .content-1 .filter .filter-btn {
+    margin: 0 3px;
+}
+
+main .container .box .wrapper .content-1 .filter .filter-btn button {
+    padding: 7px 10px;
+    background-color: #0037af;
+    border: 1px solid #002470;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+main .container .box .wrapper .content-1 .filter .filter-btn button:hover {
+    background-color: #002470;
+}
+
+main .container .box .wrapper .content-1 .search-box {
+    margin: 10px 0 0 3px;
+    width: 55%; 
+}
+
+main .container .box .wrapper .content-1 .search-box form {
+    display: flex;
+    align-items: center;
+}
+
+main .container .box .wrapper .content-1 .search-box form .search {
+    border: 1px solid black;
+    display: flex;
+    margin: 0 5px 0 0;
+    width: 100%;
+}
+
+main .container .box .wrapper .content-1 .search-box form .search input {
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 13px;
+    width: 100%;
+}
+
+main .container .box .wrapper .content-1 .search-box form .search button {
+    padding: 8px 10px;
+    border: none;
+    background-color: #0037af;
+    color: #ffffff;
+}
+
+main .container .box .wrapper .content-1 .search-box form .search button:hover {
+    background-color: #002470;
+}
+
+main .container .box .wrapper .content-1 .search-box form .mic button {
+    padding: 8px 11px;
+    border: none;
+    background-color: #0037af;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+main .container .box .wrapper .content-1 .search-box form .mic button:hover {
+    background-color: #002470;
+}
+
+main .container .box .wrapper .content-1 .search-box form #filter-btn {
+    display: none;
+    margin-left: 6px;
+}
+
+main .container .box .wrapper .content-1 .search-box form #filter-btn button {
+    padding: 7px 10px;
+    background-color: #0037af;
+    border: 1px solid #002470;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+main .container .box .wrapper .content-1 .search-box form #filter-btn button:hover {
+    background-color: #002470;
+}
+
+main .container .box .wrapper .content-2 {
+    margin: 10px 20px;
+}
+
+main .container .box .wrapper .content-2 form .table {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 555px;
+    border: 1px solid #232323;
+    overflow-y: auto;
+}
+
+.main .container .box .wrapper .content-2 form .table::-webkit-scrollbar {
+    display: none;
+}
+
+main .container .box .wrapper .content-2 form .table table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px;
+    text-align: center;
+}
+
+main .container .box .wrapper .content-2 form .table table th {
+    padding: 10px;
+    color: #ffffff;
+    border: 1px solid #002470;
+    background-color: #0037af;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+main .container .box .wrapper .content-2 form .table table td {
+    padding: 5px 10px;
+    border: 1px solid #696969;
+    font-size: 15px;
+}
+
+main .container .box .wrapper .content-2 form .table table .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+main .container .box .wrapper .content-2 form .table table .dropbtn {
+    padding: 5px 10px;
+    width: 80px;
+    background-color: #0037af;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+main .container .box .wrapper .content-2 form .table table .dropbtn:hover,
+.dropbtn:focus {
+    background-color: #002470;
+}
+
+main .container .box .wrapper .content-2 form .table table .dropbtn i {
+    margin-left: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0037af;
+    min-width: 150px;
+    padding: 1px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px #00000033;
+    z-index: 1;
+}
+
+main .container .box .wrapper .content-2 form .table table .dropdown-content button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+    background-color: #0037af;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+main .container .box .wrapper .content-2 form .table table .dropdown-content button i {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+main .container .box .wrapper .content-2 form .table table td button:hover {
+    background-color: #002470;
+}
+
+.show {
+    display: block;
+}
+
+main .container .box .wrapper .content-2 .buttons button {
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+main .container .box .wrapper .content-2 .buttons .archive {
+    background-color: #f10000;
+}
+
+main .container .box .wrapper .content-2 .buttons .archive:hover {
+    background-color: #c10000;
+}
+
+main .container .box .wrapper .content-2 .buttons .export {
+    background-color: #00a000;
+}
+
+main .container .box .wrapper .content-2 .buttons .export:hover {
+    background-color: #008000;
+}
+
+main .container .box .wrapper .content-2 .buttons .add {
+    background-color: #0037af;
+}
+
+main .container .box .wrapper .content-2 .buttons .add:hover {
+    background-color: #002470;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main .container h2 {
+        text-align: center;
+    }
+
+    main .container .box {
+        height: 700px
+    }
+
+    main .container .box .wrapper .content-2 form .table {
+        height: 530px;
+    }
+
+    main .container .box .wrapper .content-2 form .table table th {
+        font-size: 11px;
+    }
+    
+    main .container .box .wrapper .content-2 form .table table td {
+        font-size: 13px;
+    }
+
+    main .container .box .wrapper .content-2 .buttons button {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main .container .box .wrapper .content-1 {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    main .container .box .wrapper .content-1 .search-box {
+        margin-left: 0;
+        width: 100%; 
+    }
+
+    main .container .box .wrapper .content-2 form .table {
+        height: 470px;
+    }
+
+    main .container .box .wrapper .content-2 .buttons button {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main .container h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    main .container .box h3 {
+        font-size: 14px;
+    }
+
+    main .container .box .wrapper .content-1 .filter .filter-btn {
+        display: none;
+    }
+
+    main .container .box .wrapper .content-1 .search-box form #filter-btn {
+        display: block;
+    }
+
+    main .container .box .wrapper .content-2 form .table {
+        height: 480px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main .container .box .wrapper .content-1 .filter form .filt .drawer select {
+        padding: 5px 0px;
+    }
+    
+    main .container .box .wrapper .content-1 .filter form .filt .apprehension-date input {
+        padding: 5px 0px;
+    }
+
+    main .container .box .wrapper .content-2 form .table {
+        height: 465px;
+    }
+
+    main .container .box .wrapper .content-2 .buttons button {
+        font-size: 8px;
+    }
+}

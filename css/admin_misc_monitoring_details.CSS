@@ -1,0 +1,243 @@
+main {
+    margin-left: 200px;
+    padding: 20px;
+    height: 800px;
+}
+
+main .container {
+    background-color: #0037af90;
+    height: 800px
+}
+
+main .container h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px 15px 5px 15px;
+    font-size: 20px;
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+main .container .box {
+    background-color: #ffffff80;
+    margin: 10px 20px 20px 20px;
+    height: 720px;
+}
+
+main .container .box h3 {
+    color: #0037af;
+    padding: 20px;
+    margin: 20px 0 10px 0;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    filter: drop-shadow(1px 1px 1px #ffffff);
+}
+
+main .container .box .contents form {
+    width: 100%;
+}
+
+main .container .box .contents form .details {
+    display: flex;
+    justify-content: space-evenly;
+    height: 80%;
+}
+
+main .container .box .contents form .details .head {
+    display: flex;
+    flex-direction: column;
+}
+
+main .container .box .contents form .details .head h4 {
+    margin: 10px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+main .container .box .contents form .details .head span {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+main .container .box .contents form .details .head img {
+    width: 200px;
+}
+
+main .container .box .contents form #hidden-div {
+    display: none;
+}
+
+main .container .box .contents form .details .output {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    overflow: scroll;
+    border: 1px solid #f10000;
+}
+
+main .container .box .contents form .details .output img {
+    width: 200px;
+}
+
+
+.upload-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.upload-box i {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.upload-box span {
+    font-size: 18px;
+    color: #666;
+}   
+
+#fileInput {
+    display: none;
+}
+
+.upload-box::after {
+    content: "No file chosen";
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #666;
+}
+
+#fileInput:valid + .upload-box::after {
+    display: none;
+}
+
+
+
+
+
+main .container .box .contents .btn {
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .container .box .contents .btn .cancel-btn {
+    padding: 10px 15px;
+    background-color: #f10000;
+    border: 1px solid #f10000;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+main .container .box .contents .btn .cancel-btn:hover {
+    background-color: #c10000;
+    border: 1px solid #c10000;
+}
+
+main .container .box .contents .btn .add-btn {
+    padding: 10px 15px;
+    background-color: #0037af;
+    border: 1px solid #0037af;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+main .container .box .contents .btn .add-btn:hover {
+    background-color: #002470;
+    border: 1px solid #002470;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        height: 930px;
+    }
+    
+    main .container {
+        height: 930px
+    }
+
+    main .container h2 {
+        text-align: center;
+    }
+    
+    main .container .box {
+        height: 820px;
+    }
+
+    main .container .box .contents form .details {
+        align-items: baseline;
+        height: 300px;
+    }
+
+    main .container .box .contents form .details #head {
+        display: none;
+    }
+
+    main .container .box .contents form #hidden-div {
+        display: block;
+        text-align: center;
+    }
+
+    main .container .box .contents form #hidden-div .head img {
+        width: 300px;
+    }
+
+    main .container .box .contents .btn {
+        margin: 70px 20px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        height: 950px;
+    }
+    
+    main .container {
+        height: 950px
+    }
+    
+    main .container .box {
+        height: 820px;
+    }
+
+    main .container .box .contents form .details {
+        align-items: baseline;
+        height: 280px;
+    }
+
+    main .container .box .contents form .details .head h4 {
+        font-size: 16px;
+    }
+    
+    main .container .box .contents form .details .head span {
+        font-size: 16px;
+    }
+
+    main .container .box .contents form #hidden-div .head img {
+        width: 250px;
+    }
+
+    main .container .box .contents .btn {
+        margin: 100px 20px 20px 20px;
+    }
+}

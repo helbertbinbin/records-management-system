@@ -1,0 +1,163 @@
+* {
+    transition: .5s;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #0037af;
+}
+
+header {
+    background-color: #0037af;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo-name {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+header .menu-bar {
+    color: #ffffff;
+    margin: 0 15px 0 10px;
+    display: none;
+}
+
+header .logo-name img {
+    width: 40px;
+    margin: 5px;
+}
+
+header .logo-name h2 {
+    color: #ffffff;
+    margin: 5px;
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+header .reg-log {
+    margin: 10px;
+}
+
+header .reg-log ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header .reg-log ul li {
+    display: inline;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    float: left;
+}
+
+header .reg-log ul li .dropbtn {
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+header .reg-log ul li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #002470;
+    border-bottom: 1px solid #f10000;
+}
+
+header .reg-log ul li.dropdown {
+    display: inline-block;
+}
+
+header .reg-log ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0037af;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px #00000033;
+    z-index: 1;
+    right: 10px;
+}
+
+header .reg-log ul li .dropdown-content a {
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 11px;
+}
+
+header .reg-log ul li .dropdown-content a:hover {
+    background-color: #002470;
+}
+
+header .reg-log ul li .dropdown-content a.active {
+    background-color: #002470;
+    border-bottom: 1px solid #f10000;
+}
+
+header .reg-log ul .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header .reg-log ul li {
+    display: inline;
+}
+
+header .reg-log ul li a {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 15px 20px;
+}
+
+header .reg-log ul li a.active {
+    background-color: #002470;
+}
+
+header .reg-log ul li a:hover {
+    background-color: #002470;
+}
+
+header .reg-log ul li a i {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    header .menu-bar {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header .logo-name img {
+        width: 30px;
+    }
+
+    header .logo-name h2 {
+        font-size: 20px;
+    }
+
+    header .reg-log ul li a {
+        padding: 10px;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    header .reg-log ul li {
+        display: block;
+    }
+}

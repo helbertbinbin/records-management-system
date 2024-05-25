@@ -1,0 +1,92 @@
+main {
+    padding: 20px;
+    height: 800px;
+}
+
+main .container {
+    background-color: #0037af90;
+    display: flex;
+    justify-content: center;
+    height: 800px;
+}
+
+main .container .box {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main .container .box .contents {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+main .container .box .contents h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 50px 30px 10px 30px;
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+main .container .box .contents p {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 10px;
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+
+main .container .box .contents img {
+    margin: 30px 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    main .container .box .contents h1 {
+        font-size: 28px;
+    }
+
+    main .container .box .contents p {
+        font-size: 18px;
+    }
+
+    main .container .box .contents img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main .container .box .contents h1 {
+        font-size: 26px;
+    }
+
+    main .container .box .contents p {
+        font-size: 16px;
+    }
+
+    main .container .box .contents img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main .container .box {
+        margin: 0px;
+    }
+
+    main .container .box .contents {
+        padding: 0px;
+    }
+
+    main .container .box .contents h1 {
+        font-size: 20px;
+    }
+
+    main .container .box .contents p {
+        font-size: 15px;
+    }
+
+    main .container .box .contents img {
+        width: 200px;
+    }
+}
